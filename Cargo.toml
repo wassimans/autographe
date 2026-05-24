@@ -1,0 +1,10 @@
+[package]
+name = "autographe"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+author = ["Wassim Mansouri <wassim@wassimans.com>"]
+description = "A writing app for craft-respecting prose writers."
+repository = "https://github.com/Autographe/autographe"
+
+[dependencies]
