@@ -8,3 +8,4 @@ description = "A writing app for craft-respecting prose writers."
 repository = "https://github.com/Autographe/autographe"
 
 [dependencies]
+iced = "0.14.0"
