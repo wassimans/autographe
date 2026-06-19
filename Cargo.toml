@@ -1,13 +1,32 @@
-[package]
-name = "autographe"
-version = "0.1.0"
-edition = "2024"
-license = "MIT OR Apache-2.0"
-author = ["Wassim Mansouri <wassim@wassimans.com>"]
-description = "A writing app for craft-respecting prose writers."
-repository = "https://github.com/Autographe/autographe"
+# [package]
+# name = "autographe"
+# version = "0.1.0"
+# edition = "2024"
+# license = "MIT OR Apache-2.0"
+# author = ["Wassim Mansouri <wassim@wassimans.com>"]
+# description = "A writing app for craft-respecting prose writers."
+# repository = "https://github.com/Autographe/autographe"
 
-[dependencies]
-iced = { version = "0.14.0", features = ["highlighter", "tokio", "debug"]}
-tokio = { version = "1", features = ["fs"] }
-rfd = "0.16"
+# [dependencies]
+# iced = { version = "0.14.0", features = ["highlighter", "tokio", "debug"]}
+# tokio = { version = "1", features = ["fs"] }
+# rfd = "0.16"
+
+[workspace]
+resolver = "3"
+members = [
+    "crates/autographe-core",
+    "crates/autographe-iced"
+]
+
+[workspace.dependencies]
+ropey = "1.6"
+unicode-segmentation = "1.13"
+anyhow = "1.0"
+thiserror = "2.0"
+tracing = "0.1"
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+license = "MIT"
