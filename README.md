@@ -1,5 +1,5 @@
 # autographe
-A writing app for craft-respecting prose writers, made by hand in Rust, by a human for humans.
+A writing app for craft-respecting prose writers, made by hand for Mac, by a human for humans.
 
 ## License
 
